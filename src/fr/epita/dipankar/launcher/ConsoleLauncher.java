@@ -16,15 +16,18 @@ public class ConsoleLauncher {
 			end(scanner);
 			return;
 		}
+		String choice = "p";
+		while(!("e").equalsIgnoreCase(choice)){
 		
 		//menu
+			
 		System.out.println("Please select an action :");
 		System.out.println("a. create an Identity");
 		System.out.println("b. modify an Identity");
 		System.out.println("c. delete an Identity");
 		System.out.println("d. show Identity");
 		System.out.println("e. quit");
-		String choice = scanner.nextLine();
+		choice = scanner.nextLine();
 		
 		switch (choice) {
 		case "a":
@@ -53,7 +56,8 @@ public class ConsoleLauncher {
 			System.out.println("Your choice is not recognized");
 			break;
 		}
-
+		
+		}
 		
 		end(scanner);
 	}
